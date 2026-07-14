@@ -8,7 +8,10 @@
 .container{
     width: 30%;
     margin: auto;
-
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .front{
     background-image: url(../images/download\ \(16\).jpeg);
@@ -19,27 +22,36 @@
 }
 .front,.back{
     height: 600px;
-    margin: 5% 0%;
-    display: flex;
-    
+    display: flex;  
     border-radius: 10px;
+    backface-visibility: hidden;
+
+}
+.inner{
+    position: relative;
+    margin: 5% 0%;
+    transform-style: preserve-3d;
+    transition: 2s;
 }
 .body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5%;
- 
 }
 .back{
     background-color: antiquewhite;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-
+    padding: 5%;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    transform: rotateY(180deg);
 
 }
-.body h2{
+.body h2 ,.back h2{
     width: 50%;
 }
 .arrow-div{
@@ -50,6 +62,26 @@
     display: flex; 
     color: teal;
 }
-.fa-arrow-up{
+.body .fa-arrow-up{
     transform: rotate(45deg);  
 }
+.back .fa-arrow-up{
+    transform: rotate(90deg);
+}
+.back p{
+    color: gray;
+    line-height: 1.5;
+    padding: 10% 0%;
+}
+.link{
+    align-self: self-end;
+    display: flex;
+    align-items: center;
+   padding: 2%;
+    gap: 10%;
+    color: teal;
+}
+.flip-card:hover .inner{
+    transform: rotateY(180deg);
+}
+
