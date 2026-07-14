@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset >
+            <legend>Personal Information</legend>
+        <label for="fname">Frist Name</label>
+        <input type="text" pattern="[A-Za-z ]+" name="fname" placeholder="Enter Your Name" maxlength="5" id="fname" >
+        
+        <label for="email">E_mail</label>
+        <input type="email" name="email" placeholder="Enter Your Email"  id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" placeholder="Enter Your phone"  id="phone" required pattern="01[0125][0-9]{8}" >
+        <label for="file">Upload a File</label>
+        <input type="file" name="file"  id="file" required accept=".png" ><br><br>  
+        <label for="course">Choose a course</label>
+
+        <input list="courses" id="course" name="course">
+        <datalist id="courses">
+           <option value="Network">
+           <option value="AI">
+           <option value="Front end">
+           <option value="Back end">
+        </datalist>
+
+        <label for="bday">Select Your Birth Day</label>
+        <input type="date" name="bd"  id="bday" required  ><br><br> 
+
+        
+        <label for="salary">Choose Your Expected Salary from 100$ to 200$</label>
+        <input type="range" min="100" max="200" id="salary" name="salary"><br><br> 
+        
+        <label >Choose Your Gender:</label>
+        <input type="radio" name="gender" value="Male"  checked> <label >Male</label>
+        <input type="radio" name="gender" value="Female" > <label >Female</label><br>
+
+        <label >Choose Your Track:</label><br>
+        <input type="checkbox" name="Track1" value="Front end" > <label >Front end</label><br>
+        <input type="checkbox" name="Track2" value="Back end" > <label >Back end</label><br>
+        <input type="checkbox" name="Track2" value="Full stack" > <label >Full stack</label><br>
+        
+        <br><textarea cols="20" rows="8" name="comment"  required  placeholder="Leave a Comment" pattern="[A-Za-z ]+"></textarea> <br><br>
+
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
