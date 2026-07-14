@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.card{
+    padding: 2%;
+    width: 30%;
+    background-color: rgba(219, 247, 237, 0.952);
+    border-radius: 3px;
+    position: relative;
+    transition: .2s all ease-in;
+    
+}
+.card-container{
+    margin: 4% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-gray{
+    color: gray; 
+    padding: 2% 0%;
+}
+.arrow{
+    background-color: rgb(8, 101, 70);
+    color: white;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 3%;
+    border-bottom-left-radius: 100%;
+    font-size: 13px; 
+    
+}
+.card-container-down{
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+.card-down{
+    border: 2px solid gray;
+    width: 30%;
+    padding: 3% 1%;
+}
+.fa-house-chimney{
+    color: gray;
+    font-size: 25px;
+    padding: 1% 0%;
+}
+
+.two:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 5px gray;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padding{
+    padding: 10% 0%;
+}
+.flip-card{
+    width: 30%;
+    perspective: 600px;
+}
+.front ,.back{
+    font-size: 25px;
+    color: white;
+    backface-visibility: hidden;
+    height: 200px;
+    border-radius: 10px;
+}
+.inner{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+.front{
+    background-color: navy;
+}
+.back{
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+.flip-card:hover .inner{
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,137 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    background-color:lightgray;
+     padding: 3%;
+    
+}
+
+.card-container{
+display: flex;
+    justify-content: space-between;
+   
+}
+
+.card{
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 0px 4px gray;
+    position: relative;
+    background-color: white;
+}
+.bg-img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    filter: contrast(120%)
+}
+
+.pic-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.image-cont{
+    position: relative;
+}
+.picture-cont{
+    position: absolute;
+    top: 47%;
+    left: 70%;
+}
+.body{
+    padding: 10% 4%;
+}
+.body h2{
+    color: aquamarine;
+    margin: 2% 0%;
+}
+.body p{
+    color: darkgray;
+}
+.line{
+    width: 20%;
+    border: 3px solid black;
+    margin: 2% 0%;
+}
+.card:hover .layout{
+    opacity: 1;
+}
+.layout{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    opacity: 0;
+    transition: 1s;
+    border: none;
+}
+.layout p{
+    margin-top: 70%;
+    margin-left: 10%;
+    color: white;
+    font-size: 18px;
+}
+
+.data{
+    width: 100%;  
+}
+table{
+    border: 2px solid teal;
+}
+.newcity{
+width: 30%;
+overflow: hidden;
+}
+.image{
+    position: relative;
+   
+}
+.pic{
+    width: 100%;
+}
+.p-absoult{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    top: 86%;  
+    transition: .8s all ease-in; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.image:hover .p-absoult {
+   top: 0%;
+}
+.link{
+    color: teal;
+    margin: 3% 0%;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+}
+.text-gray{
+    color: gray;
+}
+
+.one:hover{
+    transform:scale(.95) ;
+}
+.two:hover{
+    transform: skewX(3deg);
+}
+.three:hover{
+    transform: translateY(-3%);
+}

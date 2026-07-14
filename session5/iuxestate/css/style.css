@@ -1,0 +1,230 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 50px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 1% 0%;
+}
+
+.nav-font{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-gray{
+    font-size: 16px;
+    color: gray;
+}
+
+.bg-orange{
+    color: rgb(124, 123, 123);
+    background-color: rgb(255, 213, 0);
+    padding: 8px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.find-appart{
+    background-image: url(../images/download\ \(14\).jpeg);
+    background-repeat: no-repeat;
+    background-size:80% 100%;
+    background-position-x:right ;
+    position: relative;  
+}
+.header-font{
+    font-weight: 500;
+    font-size: 60px;
+    padding: 7% 0%;
+}
+.w-40{
+    width: 40%;
+}
+.p-20{
+    padding: 20px 0px;
+}
+.header-size{
+    font-size: 40px;
+}
+.inp{
+    position: relative;
+    width: 80%;  
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    color: lightgrey;
+}
+
+.w-100{
+    width: 100%;
+    padding: 5% 10%;
+    border: none; 
+}
+
+.form-flex{
+    padding: 3% 0% 15% 0%;  
+}
+
+.search{
+    padding: 10px 50px;
+    border-radius: 0;
+    font-size: 15px; 
+    font-weight: 500; 
+    color: black; 
+}
+
+.border-top-right{
+    border-top-right-radius: 5px;
+}
+
+.border-bottom-right{
+    border-bottom-right-radius: 5px;
+}
+
+.border-top-left{
+    border-top-left-radius: 10px;
+}
+
+.border-bottom-left{
+    border-bottom-left-radius: 10px;
+}
+
+.box-shadow{
+    box-shadow: 0px 3px 8px gray ;
+}
+.box-flex{
+    display: flex;
+    width: 40%;
+}
+.scroll{
+    transform: rotate(270deg);
+    transform-origin: left top;
+    color: gray;
+    position: absolute;
+}
+
+.location-call{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgb(255, 213, 0);
+    padding: 30px ;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa-phone ,.fa-location-dot{
+    color: white;
+    padding-right: 15px;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.our-camp{
+    background-color: rgb(237, 236, 236);
+    padding: 10%;
+    width: 45%;
+}
+.our-camp span{
+    color:rgb(255, 213, 0);
+    font-size: 40px;
+}
+
+.our-camp p{
+    font-size:12px ;
+    padding-top: 10%;
+    font-weight: 500;
+}
+
+#appartments{
+    background-color:rgb(237, 236, 236); ;
+}
+.card{
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 4px 20px gray;
+}
+.card img{
+    width: 100%;
+    height: 400px;
+}
+.card-desc{
+    padding: 15px;
+}
+.price{
+    color: rgb(255, 213, 0);
+    font-weight: 500;  
+}
+.card-desc p{
+    padding-bottom: 10px;
+}
+.card-container{
+    padding-bottom: 5%;
+}
+.view-btn{
+    padding: 20px;
+    background-color: white;
+    cursor: pointer;
+    width: fit-content;
+}
+.card-flex{
+    display:flex;
+    gap: 5%;
+    padding-bottom: 5%;
+}
+.header-sevice{
+    font-weight: 500;
+    padding: 3% 0%;
+}
+.w-50{
+    width: 50%;
+}
+.service-size{
+    font-size: 25px ;
+}
+.img-w{
+    width: 100%;
+    height:500px;
+}
+.service-container{
+    padding: 5% 0%;
+}
