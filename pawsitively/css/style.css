@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+a{
+    color: inherit !important;
+}
+.sec1{
+    background-image: url(../images/WhatsApp\ Image\ 2026-07-16\ at\ 10.59.35\ AM.jpeg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13% 0%; 
+}
+.featured{
+    width: 90%;
+    margin: auto;
+}
+.shop{
+    width: fit-content;
+}
+.random{
+    background-color: black !important;
+    color: white !important;
+}
+.services-img-1{
+    background-image: url(../images/chomonwt_Asian_teenage_girl_with_small_dog_cuddling_laughing_fe_162bb75a-bb93-44b2-8cfa-bddcd35533fd\ 1.png);
+   width: 300px;
+   height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+@media (max-width: 767px) {
+    nav .nav-item,.nav-btn,.spical-img,.search,.view-more{
+        display: none;
+    }
+    .first-head{
+       font-size: 25px !important;
+       width: 80% !important;
+       padding-top: 10%;
+    }
+    .first-body{
+        width: 80% !important;
+    }
+   .nav-bar,.magnifying-glass{
+        display: block !important;
+    }
+   
+}
