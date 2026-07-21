@@ -16,18 +16,19 @@ let users = [
   },
 ];
 
-console.log(users)
+localStorage.setItem("users", JSON.stringify(users));
+let newUsers = JSON.parse(localStorage.getItem("users"));
 
 function addUsers() {
   let UserId = Number(prompt("enter user id"));
-  let existedId = users.some((item) => item.id == UserId);
+  let existedId =newUsers.some((item) => item.id == UserId);
   if(existedId){
     alert('Existed id')
     return
   }
     let UserName = prompt("enter user name");
     let Userbalance = Number(prompt("enter user balance"));
-    users.push({
+    newUsers.push({
       id: UserId,
       name: UserName,
       balance: Userbalance,
@@ -36,37 +37,40 @@ function addUsers() {
 addUsers();
 addUsers();
 addUsers();
-
-console.log(users);
+localStorage.setItem("users", JSON.stringify(newUsers));
 
 function editUserBalance() {
   let editById = prompt("enter the id which you want edit its balance");
   let editedBalance =Number(prompt("enter the new balance"));
 
-  let editUser = users.findIndex((item) => item.id == editById);
-   users[editUser].balance = editedBalance;
+  let editUser = newUsers.findIndex((item) => item.id == editById);
+   newUsers[editUser].balance = editedBalance;
 }
 editUserBalance();
+localStorage.setItem("users", JSON.stringify(newUsers));
 
-console.log(users);
 
 function transferBalance(){
     let fromId=Number(prompt('Enter the id you want transfer from'))
     let toId=Number(prompt('Enter the id you want transfer to'))
     let newBalance=Number(prompt('Enter the amount you want transfer'))
-    let fromIndx=users.findIndex(item=> item.id===fromId)
-    let toIndx=users.findIndex(item=> item.id===toId)
-    users[fromIndx].balance-=newBalance
-    users[toIndx].balance+=newBalance
+    let fromIndx=newUsers.findIndex(item=> item.id===fromId)
+    let toIndx = newUsers.findIndex((item) => item.id === toId);
+    newUsers[fromIndx].balance -= newBalance;
+    newUsers[toIndx].balance += newBalance;
 }
 transferBalance()
-console.log(users)
+localStorage.setItem("users", JSON.stringify(newUsers));
+
 
 function deleteUser(){
     let deletedUser=Number(prompt('Inter users id who you want remove'))
-    let deleteIndex=users.findIndex(item=> item.id===deletedUser)
-    users.splice(deleteIndex,1);
+    let deleteIndex = newUsers.findIndex((item) => item.id === deletedUser);
+    newUsers.splice(deleteIndex, 1);
     
 }
 deleteUser()
-console.log(users);
+localStorage.setItem("users", JSON.stringify(newUsers));
+
+
+console.log(newUsers);
